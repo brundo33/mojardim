@@ -1,0 +1,227 @@
+
+/* -- FONTE IMPORTADA -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* -- REINICIAR CONFIGURAÇÕES DO NAVEGADOR -- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* -- ESTILO GERAL -- */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #C7F9CC;
+}
+
+/*DEFININDO A LARGURA MÁXIMA PARA TODAS AS IMAGENS*/
+img {
+    max-width: 100%
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none; /* -- ELIMINE OS BULLET POINTS NOS LINKS DENTRO DA UL -- */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -- DEFININDO O ESTILO BÁSICO PARA OS DIFERENTES RECIPIENTES NO SITE --*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* -- BARRA DE NAVEGAÇÃO DE ESTILO -- */
+.navbar {
+    background: #5bba6f;
+    color: #fff;
+    height: 60px;
+}
+/* -- SELECTING THE LOGO IN THE NAVIGATION BAR -- */
+.navbar .logo {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* -- SELECIONANDO OS LINKS NA BARRA DE NAVEGAÇÃO -- */
+.navbar a {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* -- FAZENDO OS LINKS NA BARRA DE NAVEGAÇÃO MUDAR DE COR QUANDO O MOUSE PASSA SOBRE-- */
+.navbar a:hover {
+    color: #054a29;
+}
+/* -- SELECIONANDO O RECIPIENTE DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* -- SELECIONANDO A LISTA NÃO ORDENADA DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+/* -- ESTILO DO CABEÇALHO -- */
+.header {
+    background: #054a29;
+    color: #fff;
+    min-height: 400px;
+}
+
+/* -- SELECIONANDO O CABEÇALHO LV1 DENTRO DO CABEÇALHO -- */
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #aefb2a;
+}
+
+/* -- SELECIONANDO A IMAGEM DENTRO DO CABEÇALHO -- */
+.header img {
+    max-width: 400px;
+}
+
+/* -- SELECIONANDO O RECIPIENTE DENTRO DAS CAIXAS. POSICIONAMENTO COM FLEXBOX -- */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* -- SELECIONANDO O RECIPIENTE DENTRO DAS CAIXAS. POSICIONAMENTO COM FLEXBOX -- */
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -- SELECIONANDO A CAIXA DENTRO DA SEÇÃO (6)-- */
+.box {
+    flex: 1 0 0; /* -- SHORTHAND PARA A FLEX-GROW, FLEX-SHRINK E FLEX-BASIS (1,0,0) RESPECTIVAMENTE -- */
+    background: #054a29;
+    color: #fff;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+/* -- SELECIONANDO ÍCONES NA CAIXA DENTRO DA SEÇÃO SELECIONAR ÍCONES NA DENTRO DA SECCAO (6)-- */
+.box i {
+    margin-right: 10px;
+}
+
+.box a:hover {
+    color: #aefb2a;
+    
+}
+
+.contact {
+    background: #5bba6f;
+    color: #fff;
+    min-height: 60px;
+    margin-top: 10px;
+ }
+
+.contact .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact .social a {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px
+}
+
+.contact a:hover {
+    color: #054a29;
+    font-weight: bold;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1 0 0;
+    line-height: 1.5;
+    padding: 15px 20px
+}
+
+.subscribe input {
+    width: 300px;
+    height: 30px;
+    padding: 5px 10px;
+} 
+
+.subscribe button {
+    color: #fff;
+    font-weight: bold;
+    background: #054a29;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: #054a29;
+}
+
+.subscribe button:hover {
+    color: #aefb2a;
+}
+.copyright {
+    background: #5bba6f;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+}
+
+.copyright p {
+    padding-top: 10px;
+}
+
+/*MEDIA QUERY PARA ECRANS ABAIXO DE 768PX*/
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    .contact .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+}
