@@ -222,6 +222,7 @@ a {
 
 .boxes-container {
     display: flex;
+    
     /* justify-content: space-between; */
     /* align-items:center; */
 }
@@ -243,6 +244,11 @@ a {
 .box:hover {
     background-color: var(--verde);
 }
+
+.box img {
+    background-color: var(--branco);
+}
+
 /* -- SELECIONANDO ÍCONES NA CAIXA DENTRO DA SEÇÃO SELECIONAR ÍCONES NA DENTRO DA SECCAO (6)-- */
 .box i {
     margin-right: 10px;
@@ -251,6 +257,12 @@ a {
 .box a:hover {
     color: var(--branco);
     
+}
+
+.last-item {
+    text-align: center;
+    padding: 10px;
+
 }
 
 .contact {
@@ -342,11 +354,11 @@ a {
         text-align: center;
     }
 
-    /* .mission .container {
+    .mission .container {
         flex-direction: column;
         padding-top: 20px;
         text-align: center;
-    } */
+    }
 
     .mission img {
         padding: 5px 60px;
@@ -365,5 +377,19 @@ a {
         padding-top: 20px;
         text-align: center;
     } */
+}
+
+@media (max-width: 1024px) {
+
+    .navbar .container {
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px 10px;
+        
+    }
+}
+
+@media (max-width: 1600px) {
+
 
 }
