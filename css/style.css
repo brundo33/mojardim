@@ -24,6 +24,8 @@
 
 /* -- ESTILO GERAL -- */
 body {
+    /* margin: 0;
+    padding: 0; */
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -58,42 +60,84 @@ a {
 
 /* -- BARRA DE NAVEGAÇÃO DE ESTILO -- */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--verde-escuro);
     color: #fff;
-    height: 60px;
+    padding: 0 400px;
+    /* height: 60px; */
 }
 /* -- SELECTING THE LOGO IN THE NAVIGATION BAR -- */
 .navbar .logo {
-    font-size: xx-large;
-    font-weight: bold;
+    font-size: 2rem;
+    margin: .5rem;
+    /* font-weight: bold; */
 }
 
 /* -- SELECIONANDO OS LINKS NA BARRA DE NAVEGAÇÃO -- */
-.navbar a {
-    font-size: 18px;
-    font-weight: bold;
+.navbar-links li a {
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    padding: 1rem;
+    display: block;
 }
+
+.nav-btn-src {
+    background-color: var(--verde-oliva);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 5px;
+    margin: 20px 0;
+}
+/* .navbar-links li:hover {
+    color: var(--verde-claro);
+} */
+
 /* -- FAZENDO OS LINKS NA BARRA DE NAVEGAÇÃO MUDAR DE COR QUANDO O MOUSE PASSA SOBRE-- */
-.navbar a:hover {
+.navbar-links a:hover {
     color: var(--verde-claro);
 }
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+
 /* -- SELECIONANDO O RECIPIENTE DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
-.navbar .container {
+/* .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
+} */
 
 /* -- SELECIONANDO A LISTA NÃO ORDENADA DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
 
-.navbar ul {
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
-.navbar ul li {
+/* .navbar-links li a {
     margin-left: 20px;
-}
+
+} */
 /* -- ESTILO DO CABEÇALHO -- */
 .header {
     background: var(--verde-oliva);
@@ -126,7 +170,10 @@ a {
 .header img {
     max-width: 600px;
     /* padding: 20px; */
+    /* margin-top: 20px; */
+    /* border-radius: 20px; */
 }
+
 
 /* -- SELECIONANDO O RECIPIENTE DENTRO DAS CAIXAS. POSICIONAMENTO COM FLEXBOX -- */
 .header .container {
@@ -304,7 +351,7 @@ a {
     margin: 20px 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
     padding: 15px 20px;
-    /* border-radius: 8px; */
+    border-radius: 10px;
 }
 
 .box a {
@@ -450,6 +497,78 @@ a {
 }
 
 /*MEDIA QUERY PARA ECRANS ABAIXO DE 768PX*/
+
+@media (max-width: 400px) {
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+       display: none;
+       width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar .container {
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px 10px;
+        
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+     .header img {
+        display: none;
+    }
+
+    .mission .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .mission img {
+        padding: 5px 60px;
+    }
+   
+    .boxes-container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+
+    }
+   
+}
+
 @media (max-width: 768px) {
     
     .navbar .container {
@@ -458,6 +577,10 @@ a {
         text-align: center;
         padding: 20px 10px;
         
+    }
+
+    .header img {
+        display: none;
     }
     .container {
         flex-direction: column;
@@ -488,6 +611,38 @@ a {
         padding-top: 20px;
         text-align: center;
     } */
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+       display: none;
+       width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
 
 @media (max-width: 1024px) {

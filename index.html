@@ -10,17 +10,25 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="container">
+      <!-- <div class="container"> -->
         <a href="index.html">
           <div class="logo">MôJardim</div>
         </a>
-        <div>
-          <ul class="nav">
+
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
+        <div  class="navbar-links">
+          <ul>
+         
             <li>
               <a href="./pages/planos.html">Planos</a>
             </li>
             <li>
-              <a href="#produtos">Comprar</a>
+              <a href="./index.html#produtos">Comprar</a>
             </li>
             <li>
               <a href="./pages/cuidados.html">Cuidados</a>
@@ -28,20 +36,30 @@
             <li>
               <a href="./pages/about.html">Sobre Nos</a>
             </li>
+            <!-- <li>
+              <input type="text" placeholder="search" class="nav-btn-src">
+            </li> -->
+            <li>
+              <a href="./pages/indisponivel.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <a href="./pages/indisponivel.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <!-- <div class="navbar-links">
+          <ul>
             <li>
               <input type="text" placeholder="search" class="nav-btn-src">
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
             <li>
               <a href="pages/produtos.html"><i class="fa-solid fa-user"></i></a>
             </li>
             <li>
               <a href="./pages/produtos.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
-        </ul>
+        </ul> -->
       </div>
       </div>
     </nav>
@@ -53,13 +71,12 @@
           <p>
             Que melhor maneira de abraçar a mudança das estações do que uma nova vegetação? Aproveite o frete grátis em todas as plantas de casa.
           </p>
-          <button type="submit">Comprar</button>
+          <a href="#produtos"><button type="submit">Comprar</button></a>
         </div>
-        <img src="./images/img_4.jpg" alt="">
+        <img src="./images/img_4.jpg" alt="" class="cover">
       </div>
     </header>
 
-    
     <section class="mission" id="mission">
       <div class="container">
         <img src="images/img_8.webp" alt="">
@@ -152,7 +169,7 @@
 
   <section class="review" id="review">
     <div class="container">
-      <h2 class="title-2">O Que As Pessoas Estão A Comentar</h2>
+      <h2 class="title-2">Testemunhos</h2>
       <div class="review-container">
         <div class="review-item">
           <p>“Já encomendei várias vezes e cada vez recebo as plantas mais saudáveis e bonitas muito rapidamente. Estou extremamente satisfeito com o MoJardim.”</p>
@@ -236,5 +253,7 @@
         <P>© 2022 MôJardim. Todos os direitos reservados</P>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
