@@ -17,15 +17,18 @@
     --branco: #fff;
     --branco-perola: #f9f6f2;
     --verde-oliva: #e2e8da;
+    --cinza: #8d99ae;
     --cinza-escuro: #333;
     --cinza-mais-escuro: #151515;
     --preto:#000;
+    --terracota: #ffb4a2;
+    --indigo: #003566;
 }
 
 /* -- ESTILO GERAL -- */
 body {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -44,6 +47,11 @@ h1, h2, h3, h4 {
 
 ul {
     list-style-type: none; /* -- ELIMINE OS BULLET POINTS NOS LINKS DENTRO DA UL -- */
+}
+
+ol {
+    padding: 0 20px;
+    text-align: left;
 }
 
 a {
@@ -129,8 +137,8 @@ a {
 /* -- SELECIONANDO A LISTA NÃO ORDENADA DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
 
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     display: flex;
 }
 
@@ -376,6 +384,54 @@ a {
 }
 
 
+.plano-item-block {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 0 120px 0 0;
+    
+}
+
+
+.plano-item-block p {
+    border: 1px solid var(--cinza-escuro);
+    padding: 10px;
+    margin: 5px 20px 0 0;
+    
+}
+
+.plano-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.plano-list {
+    list-style-type:disc;
+    padding: 0 20px;
+    text-align: left;
+    
+}
+
+.variety-box {
+    border: 1px solid var(--cinza-escuro);
+}
+
+.terracota {
+    background-color: var(--terracota);
+}
+
+.branco {
+    background-color: var(--branco);
+}
+
+.azul {
+    background-color: var(--indigo);
+}
+
+
+
 .about {
     /* background: var(--verde-oliva); */
     color: var(--cinza-mais-escuro);
@@ -467,6 +523,9 @@ a {
     height: 30px;
     padding: 5px 10px;
 } 
+.mission-container-vantagens .subscribe button {
+    width: 100%;
+}
 
 .subscribe button {
     color: #fff;
