@@ -101,6 +101,13 @@ a {
     height: 400px;
 }
 
+.header-empty {
+    background: var(--verde-oliva);
+    color: var(--preto);
+    min-height: 778px;
+}
+
+
 /* -- SELECIONANDO O CABEÇALHO LV1 DENTRO DO CABEÇALHO -- */
 .header h1 {
     font-size: 4rem;
@@ -109,6 +116,12 @@ a {
     color: var(--verde-escuro);
 }
 
+.header-empty h1 {
+    font-size: 4rem;
+    /* font-weight: bolder; */
+    line-height: 1.2;
+    color: var(--verde-escuro);
+}
 /* -- SELECIONANDO A IMAGEM DENTRO DO CABEÇALHO -- */
 .header img {
     max-width: 600px;
@@ -117,6 +130,12 @@ a {
 
 /* -- SELECIONANDO O RECIPIENTE DENTRO DAS CAIXAS. POSICIONAMENTO COM FLEXBOX -- */
 .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-empty .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,6 +159,54 @@ a {
     border: 1px solid var(--verde-escuro);
 }
 
+.page-header {
+    background: var(--verde-oliva);
+    color: var(--preto);
+    height: 200px;
+    /* margin: 0 auto; */
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    /* font-weight: bolder; */
+    line-height: 1.2;
+    color: var(--verde-escuro);
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.title {
+    font-size: 2.7rem;
+    /* font-weight: bold; */
+    line-height: 1.2;
+    color: var(--verde-escuro);
+    /* text-align: left; */
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.title-2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--verde-escuro);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title-3 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: var(--verde-escuro);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 /* ESTILO DO MISSION */
 .mission {
     /* background: var(--verde-oliva); */
@@ -159,16 +226,6 @@ a {
     justify-content: space-between;
 }
 
-.title {
-    font-size: 2.7rem;
-    /* font-weight: bold; */
-    line-height: 1.2;
-    color: var(--verde-escuro);
-    /* text-align: left; */
-    margin-top: 100px;
-    margin-bottom: 5px;
-   
-}
 
 .mission h3 {
     /* text-align: right; */
@@ -198,14 +255,14 @@ a {
 .mission-vantagem i {
     margin-right: 10px;
     color: var(--verde-escuro);
-    
 }
+
 
 .review-container {
     display: flex;
     justify-content: space-evenly;
     align-items:flex-start;
-    
+    padding: 10px 0 20px 0;
 }
 
 .review-item {
@@ -216,6 +273,18 @@ a {
 
 .review h2 {
     text-align: center;
+}
+
+.policy {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.policy-item {
+    text-align: center;
+    /* padding: 10px; */
+    margin: 30px 0;
+
 }
 
 /* -- SELECIONANDO O RECIPIENTE DENTRO DAS CAIXAS. POSICIONAMENTO COM FLEXBOX -- */
@@ -259,10 +328,52 @@ a {
     
 }
 
+
+.about {
+    /* background: var(--verde-oliva); */
+    color: var(--cinza-mais-escuro);
+    min-height: 300px;
+}
+
+.about img {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about h3 {
+    /* text-align: right; */
+    /* font-weight: lighter; */
+    color: var(--verde-escuro);
+}
+
+.about p {
+    /* text-align: right; */
+    margin-top: 10px;
+}
+
+.about a {
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
 .last-item {
     text-align: center;
     padding: 10px;
+    margin: 30px 0;
 
+}
+
+.first-item {
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0;
 }
 
 .contact {
