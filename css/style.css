@@ -73,22 +73,26 @@ a {
     align-items: center;
     background: var(--verde-escuro);
     color: #fff;
-    padding: 0 400px;
+    /* padding: 0 100%; */
     /* height: 60px; */
 }
 /* -- SELECTING THE LOGO IN THE NAVIGATION BAR -- */
 .navbar .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: .5rem;
     /* font-weight: bold; */
 }
 
 /* -- SELECIONANDO OS LINKS NA BARRA DE NAVEGAÇÃO -- */
 .navbar-links li a {
-    /* font-size: 18px; */
-    /* font-weight: bold; */
     padding: 1rem;
     display: block;
+    margin-left: 20px;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .nav-btn-src {
@@ -104,7 +108,7 @@ a {
 
 /* -- FAZENDO OS LINKS NA BARRA DE NAVEGAÇÃO MUDAR DE COR QUANDO O MOUSE PASSA SOBRE-- */
 .navbar-links a:hover {
-    color: var(--verde-claro);
+    background-color: var(--verde);
 }
 
 .toggle-button {
@@ -136,11 +140,7 @@ a {
 
 /* -- SELECIONANDO A LISTA NÃO ORDENADA DENTRO DA BARRA DE NAVEGAÇÃO. POSICIONAMENTO COM FLEXBOX -- */
 
-.navbar-links ul {
-    /* margin: 0;
-    padding: 0; */
-    display: flex;
-}
+
 
 /* .navbar-links li a {
     margin-left: 20px;
@@ -150,7 +150,7 @@ a {
 .header {
     background: var(--verde-oliva);
     color: var(--preto);
-    height: 400px;
+    /* height: 400px; */
 }
 
 .header-empty {
@@ -176,7 +176,8 @@ a {
 }
 /* -- SELECIONANDO A IMAGEM DENTRO DO CABEÇALHO -- */
 .header img {
-    max-width: 600px;
+    width: 60%;
+    /* max-width: 600px; */
     /* padding: 20px; */
     /* margin-top: 20px; */
     /* border-radius: 20px; */
@@ -571,7 +572,85 @@ a {
 
 /*MEDIA QUERY PARA ECRANS ABAIXO DE 768PX*/
 
-@media (max-width: 400px) {
+@media (max-width: 480px)  {
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+       display: none;
+       width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        /* margin: 0 auto;*/
+    } 
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar .container {
+        /* flex-direction: column; */
+        justify-content: space-between;
+        text-align: center;
+        padding: 20px 10px;
+        
+    }
+
+    .container {
+        flex-direction: column;
+        /* padding: 20px 10px; */
+        text-align: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .mission .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .mission img {
+        padding: 5px 60px;
+    }
+   
+    .boxes-container {
+        flex-direction: column;
+        /* padding-top: 20px; */
+        text-align: center;
+        /* margin: 10px 40px; */
+
+    }
+
+  .review-container {
+    flex-direction: column;
+    text-align: center;
+  }
+   
+}
+
+@media (max-width: 768px) {
     
     .toggle-button {
         display: flex;
@@ -606,46 +685,7 @@ a {
     }
 
     .navbar .container {
-        /* flex-direction: column; */
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 20px 10px;
-        
-    }
-
-    .container {
         flex-direction: column;
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-     .header img {
-        display: none;
-    }
-
-    .mission .container {
-        flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .mission img {
-        padding: 5px 60px;
-    }
-   
-    .boxes-container {
-        flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
-
-    }
-   
-}
-
-@media (max-width: 768px) {
-    
-    .navbar .container {
-        /* flex-direction: column; */
         justify-content: space-evenly;
         text-align: center;
         padding: 20px 10px;
@@ -657,7 +697,7 @@ a {
     }
     .container {
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 10px 30px;
         text-align: center;
     }
 
@@ -674,16 +714,21 @@ a {
    
     .boxes-container {
         flex-direction: column;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         text-align: center;
+        margin: 10px 100px;
 
     }
 
-    /* .contact .container {
+    .card {
+        margin: 20px 40px;
+    }
+
+    .contact .container {
         flex-direction: column;
         padding-top: 20px;
         text-align: center;
-    } */
+    }
 
     .toggle-button {
         display: flex;
